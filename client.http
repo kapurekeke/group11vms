@@ -1,0 +1,70 @@
+### GOODLUCK ###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "Mikayla",
+  "password": "Kayla123"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "Mikayla",
+  "password": "Kayla123"
+}
+###
+
+###
+POST http://localhost:3000/createvisitorData
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlhNDQ2ZGM1OTA0ZWE0NDdmM2FhZGIiLCJ1c2VybmFtZSI6Ik1pa2F5bGEiLCJwYXNzd29yZCI6IktheWxhMTIzIiwiaWF0IjoxNjg3ODMyNDAyfQ.Y1d8y_KJKQGBUvBJQNpczMLWnYtZGNfsjGRlhb7mZj0
+
+{
+    "name": "Sarah Jose",
+    "city": "Melbourne",
+    "relationship": "aunt",
+    "visitorId": "008"
+  
+}
+###
+
+PATCH  http://localhost:3000/updatevisitor/649a476a418f91102380abe6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk3Mzc5YjI0OWQ5ZTNmYzdlZDQ4ZTUiLCJ1c2VybmFtZSI6Ik1pa2F5bGEiLCJwYXNzd29yZCI6IktheWxhMTIzIiwiaWF0IjoxNjg3NjM1MDg1fQ.XP_Lhl8zP_LQW_edNNcHH6xG950qsnJAOTquu0Qo9ek
+
+{
+  "city": "Texas"
+}
+
+###
+DELETE  http://localhost:3000/deletevisitor/649a476a418f91102380abe6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk3Mzc5YjI0OWQ5ZTNmYzdlZDQ4ZTUiLCJ1c2VybmFtZSI6Ik1pa2F5bGEiLCJwYXNzd29yZCI6IktheWxhMTIzIiwiaWF0IjoxNjg3NjM1MDg1fQ.XP_Lhl8zP_LQW_edNNcHH6xG950qsnJAOTquu0Qo9ek
+###
+
+GET http://localhost:3000/admins
+Content-Type: application/json
+###
+
+GET http://localhost:3000/visitors
+Content-Type: application/json
+###
+
+GET http://localhost:3000/prisoner
+Content-Type: application/json
+###
+
+GET http://localhost:3000/cell
+Content-Type: application/json
+###
+
+GET http://localhost:3000/emergency
+Content-Type: application/json
+###
+
+GET http://localhost:3000/casedetail
+Content-Type: application/json
+###
